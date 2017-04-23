@@ -12,7 +12,7 @@ client = Client(url)
 
 print "Insira seu nome de usuario:"
 id = client.service.assignID(raw_input())
-if id < 0: exit
+if id < 0: sys.exit()
 
 def receiver(delay):
     messages = []
